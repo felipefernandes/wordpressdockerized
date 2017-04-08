@@ -8,12 +8,11 @@ Antes de começar, você precisar do Docker instalado na sua máquina. Você pod
 
 ### Estrutura do projeto
 
-``/``
-``/db-data`` 				é onde serão guardado os dados do mysql
-``/wp-content`` 			diretório padrão de conteúdo do Wordpress
-``/wp-content/plugins`` 	diretório onde você vai guardar os seus plugins
-``/wp-content/themes`` 		diretório onde você vai guardar os seus temas
-``/wp-content/uploads``		diretório onde serão guardadas as mídias
+* `/db-data` 				 é onde serão guardado os dados do mysql
+* `/wp-content` 			diretório padrão de conteúdo do Wordpress
+* `/wp-content/plugins` 	diretório onde você vai guardar os seus plugins
+* `/wp-content/themes` 		diretório onde você vai guardar os seus temas
+* `/wp-content/uploads`		diretório onde serão guardadas as mídias
 
 ---
 
