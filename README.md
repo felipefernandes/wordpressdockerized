@@ -1,4 +1,4 @@
-# Lab: Wordpress Dockered
+# Wordpress Dockerizado
 
 Projeto Wordpress rodando em um container Docker com Banco de Dados (MariaDB) persistente
 
@@ -30,14 +30,8 @@ Se quiser, além de remover a imagem/container e os dados do banco de dados, dig
 
 ``# docker-compose down --volumes --remove-orphans``
 
----
 
-### Em produção
-
-Será necessário rodar o comando do ``docker-compose`` um pouco diferente, agora, referenciando o arquivo com variáveis inerentes ao ambiente de PROD, a seguir:
-
-``# docker-compose -f docker-compose.yml -f docker-compose.prod.yml up``
-
+### No browser, para acessar, você deve acessar com ``http://localhost:8080`` 
 
 ---
 
@@ -51,7 +45,14 @@ Os arquivos de trabalho devem ser armazenados em:
 
 Eles podem ser trabalhados normalmente e localmente, e ao serem atualizados já refletem as alterações feitas.
 
-### No browser, você deve acessar com ``http://localhost:8080`` 
+
+---
+
+### Em produção (BETA)
+
+Se você quiser colocar em um servidor e usar o docker, será necessário rodar o comando do ``docker-compose`` um pouco diferente, agora, referenciando o arquivo com variáveis inerentes ao ambiente de PROD (portas do mysql, http, e etc.). Após clonar o repo no servidor (com seus respectivos arquivos), rode o comando a seguir no bash do servidor:
+
+``# docker-compose -f docker-compose.yml -f docker-compose.prod.yml up``
 
 ---
 
