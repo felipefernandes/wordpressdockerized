@@ -1,10 +1,8 @@
 # Wordpress Dockerizado
 
-Projeto Wordpress rodando em um container Docker com Banco de Dados (MariaDB) persistente
+Projeto Wordpress rodando em um container Docker com Banco de Dados (MariaDB) persistente.
 
-## Primeiros passos
-
-Antes de começar, você precisar do Docker instalado na sua máquina. Você pode baixar [aqui](https://docs.docker.com/engine/installation/).
+---
 
 ### Estrutura do projeto
 
@@ -13,6 +11,18 @@ Antes de começar, você precisar do Docker instalado na sua máquina. Você pod
 * `/wp-content/plugins` 	diretório onde você vai guardar os seus plugins
 * `/wp-content/themes` 		diretório onde você vai guardar os seus temas
 * `/wp-content/uploads`		diretório onde serão guardadas as mídias
+
+## Primeiros passos
+
+Antes de começar, você precisar do Docker instalado na sua máquina. Você pode baixar [aqui](https://docs.docker.com/engine/installation/).
+
+Depois, você vai precisar editar o arquivo `docker-compose.yml` o atualizando com o caminho (completo) do projeto na sua máquina. So duas linhas que fazem referência aos Volumes (espécie de mapeamento/link da sua máquina com o container), assim:
+
+```
+    volumes:
+       - <TROQUE PELA PASTA ONDE FICARA SEU PROJETO>/wp-content:/var/lib/mysql
+```
+Feito isso, é só passar para o passo de **Inicializar o ambiente**.
 
 ---
 
