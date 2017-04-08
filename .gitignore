@@ -19,6 +19,7 @@ db-data/
 # "plugins" directory
 # "themes" directory
 wp-content/*
+!wp-content/languages
 !wp-content/mu-plugins/
 !wp-content/plugins/
 !wp-content/themes/
