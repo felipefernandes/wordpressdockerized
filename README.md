@@ -4,14 +4,6 @@ Projeto Wordpress rodando em um container Docker com Banco de Dados (MariaDB) pe
 
 ---
 
-### Estrutura do projeto
-
-* `/db-data` 				 é onde serão guardado os dados do mysql
-* `/wp-content` 			diretório padrão de conteúdo do Wordpress
-* `/wp-content/plugins` 	diretório onde você vai guardar os seus plugins
-* `/wp-content/themes` 		diretório onde você vai guardar os seus temas
-* `/wp-content/uploads`		diretório onde serão guardadas as mídias
-
 ## Primeiros passos
 
 Antes de começar, você precisar do Docker instalado na sua máquina. Você pode baixar [aqui](https://docs.docker.com/engine/installation/).
@@ -32,6 +24,8 @@ Para rodar a imagem localmente, digite:
 
 ``# docker-compose up -d``
 
+Ao rodar a primeira vez, o comando irá baixar as imagens que você não tem na sua máquina (leva alguns minutinhos) e irá aplicar as demais configurações existentes no arquivo `docker-compose.yml`. Ao finalizar, basta acessar no browser e fazer o setup inicial padrão do Wordpress.
+
 Para PARAR a imagem localmente, digite:
 
 ``# docker-compose down``
@@ -47,13 +41,15 @@ Se quiser, além de remover a imagem/container e os dados do banco de dados, dig
 
 ## Trabalhando com o projeto
 
-Os arquivos de trabalho devem ser armazenados em:
+Os arquivos de trabalho devem ser armazenados da seguinte forma:
 
- - Temas: ``wp-content/themes/``
- - Plugins: ``wp-content/plugins``
- - Uploads: ``wp-content/uploads``
+* `/db-data` 				        é onde serão guardado os dados do mysql
+* `/wp-content` 			      diretório padrão de conteúdo do Wordpress
+* `/wp-content/plugins` 	diretório onde você vai guardar os seus plugins
+* `/wp-content/themes` 		diretório onde você vai guardar os seus temas
+* `/wp-content/uploads`		diretório onde serão guardadas as mídias
 
-Eles podem ser trabalhados normalmente e localmente, e ao serem atualizados já refletem as alterações feitas.
+Eles poderão ser trabalhados normalmente e localmente, e ao serem atualizados já refletem as alterações feitas.
 
 
 ---
