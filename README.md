@@ -2,6 +2,19 @@
 
 Projeto Wordpress rodando em um container Docker com Banco de Dados (MariaDB) persistente
 
+## Primeiros passos
+
+Antes de começar, você precisar do Docker instalado na sua máquina. Você pode baixar [aqui](https://docs.docker.com/engine/installation/).
+
+### Estrutura do projeto
+
+``/``
+``/db-data`` 				é onde serão guardado os dados do mysql
+``/wp-content`` 			diretório padrão de conteúdo do Wordpress
+``/wp-content/plugins`` 	diretório onde você vai guardar os seus plugins
+``/wp-content/themes`` 		diretório onde você vai guardar os seus temas
+``/wp-content/uploads``		diretório onde serão guardadas as mídias
+
 ---
 
 ## Inicializando e/ou Parando o ambiente do projeto
