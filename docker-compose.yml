@@ -5,7 +5,7 @@ services:
   mysql:
     image: mariadb
     volumes:
-       - /Users/macbookair/Sites/WPDocker/db-data:/var/lib/mysql
+       - <TROQUE PELA PASTA ONDE FICARA SEU PROJETO>/wp-content:/var/lib/mysql
     restart: always  
     ports:
       - 3307:3306
@@ -20,7 +20,7 @@ services:
       - 8080:80
     restart: always
     volumes:
-      - /Users/macbookair/Sites/WPDocker/wp-content:/var/www/html/wp-content
+      - <TROQUE PELA PASTA ONDE FICARA SEU PROJETO>/wp-content:/var/www/html/wp-content
     links:
       - mysql
     environment:
